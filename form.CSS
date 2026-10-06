@@ -1,0 +1,431 @@
+```css
+/* ==============================
+   Global Styles
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    padding: 40px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #dbeafe,
+        #eef2ff,
+        #fce7f3
+    );
+
+    color: #1e293b;
+}
+
+
+/* ==============================
+   Main Container
+================================ */
+
+.container {
+    max-width: 900px;
+    margin: auto;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(15, 23, 42, 0.15);
+}
+
+
+/* ==============================
+   Header
+================================ */
+
+.form-header {
+    text-align: center;
+
+    padding: 38px 20px;
+
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e3a8a
+    );
+}
+
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+
+.form-header h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+
+.form-header p {
+    color: #dbeafe;
+    font-size: 15px;
+}
+
+
+/* ==============================
+   Form
+================================ */
+
+form {
+    padding: 35px 45px;
+}
+
+
+section {
+    margin-bottom: 30px;
+}
+
+
+section h2 {
+    color: #1d4ed8;
+
+    font-size: 20px;
+
+    margin-bottom: 22px;
+
+    padding-bottom: 9px;
+
+    border-bottom: 2px solid #dbeafe;
+}
+
+
+/* ==============================
+   Form Groups
+================================ */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group > label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #334155;
+
+    font-weight: bold;
+}
+
+
+/* ==============================
+   Input Fields
+================================ */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    background: #f8fafc;
+
+    transition: 0.3s;
+}
+
+
+textarea {
+    resize: vertical;
+}
+
+
+/* Focus Effect */
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+
+    border-color: #2563eb;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* ==============================
+   Two Column Layout
+================================ */
+
+.row {
+    display: flex;
+
+    gap: 20px;
+}
+
+
+.row .form-group {
+    flex: 1;
+}
+
+
+/* ==============================
+   Checkbox & Radio
+================================ */
+
+.options {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+
+.options label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 9px 14px;
+
+    border-radius: 7px;
+
+    background: #eff6ff;
+
+    color: #1e40af;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.options label:hover {
+    background: #dbeafe;
+
+    transform: translateY(-1px);
+}
+
+
+.options input {
+    accent-color: #2563eb;
+}
+
+
+/* ==============================
+   File Upload
+================================ */
+
+input[type="file"] {
+
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px dashed #94a3b8;
+
+    border-radius: 8px;
+
+    background: #f8fafc;
+
+    cursor: pointer;
+}
+
+
+/* ==============================
+   Buttons
+================================ */
+
+.buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 10px;
+}
+
+
+button {
+
+    flex: 1;
+
+    border: none;
+
+    padding: 13px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Register Button */
+
+.register-btn {
+
+    background: #2563eb;
+
+    color: white;
+}
+
+
+.register-btn:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 15px rgba(37, 99, 235, 0.25);
+}
+
+
+/* Reset Button */
+
+.reset-btn {
+
+    background: #e2e8f0;
+
+    color: #334155;
+}
+
+
+.reset-btn:hover {
+
+    background: #cbd5e1;
+
+    transform: translateY(-2px);
+}
+
+
+/* ==============================
+   Footer
+================================ */
+
+footer {
+
+    text-align: center;
+
+    padding: 18px;
+
+    background: #f8fafc;
+
+    border-top: 1px solid #e2e8f0;
+}
+
+
+footer p {
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   Responsive Design
+================================ */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+
+    .form-header h1 {
+        font-size: 27px;
+    }
+
+
+    form {
+        padding: 25px 20px;
+    }
+
+
+    .row {
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+
+    .options {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .buttons {
+        flex-direction: column;
+    }
+
+}
+
+
+/* ==============================
+   Small Mobile Screens
+================================ */
+
+@media (max-width: 400px) {
+
+    .form-header {
+        padding: 28px 15px;
+    }
+
+
+    .form-header h1 {
+        font-size: 24px;
+    }
+
+
+    form {
+        padding: 20px 15px;
+    }
+
+
+    section h2 {
+        font-size: 18px;
+    }
+
+}
+```
